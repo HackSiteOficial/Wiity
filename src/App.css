@@ -1,3 +1,6 @@
+.back-o {
+  background: #ffb218;
+}
 .slide {
   width: 100%;
   height: 600px;
@@ -34,6 +37,10 @@
   margin-top: 8px;
   font-weight: 800;
 }
+.about-con {
+  display: flex;
+  justify-content: center;
+}
 .about-p {
   font-size: 26px;
   margin-top: -30px;
@@ -69,11 +76,28 @@
   width: 85%;
   font-size: 18px;
 }
+.back-o2 {
+  background: #ffb218;
+  height: 50px;
+}
+.back-o3 {
+  background: #162941;
+  display: flex;
+  justify-content: center;
+}
+.lamp-c {
+  width: 100%;
+  display: flex;
+}
 .lamp {
   width: 25%;
   height: 180px;
   position: relative;
   display: inline-block;
+}
+.imgs-cont {
+  display: flex;
+  justify-content: center;
 }
 .lamp .img-top {
   display: none;
@@ -89,11 +113,15 @@
 .lamp:hover .prueba {
   display: flex;
   width: 1200px;
-  height: 420px;
+  height: 560px;
   background: #04192d;;
   justify-content: center;
   margin-left: 50px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.prueba-sep {
+  text-align: left;
+  width: 95%;
 }
 .prueba2 {
   display: none;
@@ -101,7 +129,7 @@
 .lamp:hover .prueba2 {
   display: flex;
   width: 1200px;
-  height: 420px;
+  height: 600px;
   background: #04192d;;
   justify-content: center;
   margin-left: -260px;
@@ -130,6 +158,15 @@
   justify-content: center;
   margin-left: -930px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.text-4 {
+  text-align: left;
+  width: 90%;
+  margin: 10px;
+}
+.back-3 {
+  background: #162941;
+  height: 450px;
 }
 .c-cont1 {
   width: 33.3%;
@@ -192,10 +229,27 @@
   font-size: 25px;
   color: #1c2b3f;
   line-height: 30px;
+  margin-left: 20px;
+  font-weight: 800;
+  margin-right: 20px;
+  color: #ff8500;
 }
 .sep-t2c2 {
   font-size: 20px;
   margin-top: -25px;
+  margin-left: 20px;
+  font-weight: 600;
+  margin-right: 20px;
+  color: #FFF;
+}
+.prueba-w2 {
+  width: 100%;
+  margin: -10px;
+}
+.prueba-w3 {
+  width: 100%;
+  margin-top: 60px;
+  border-top: 3px solid #ff8500;
 }
 .sep-t2c3 {
   font-size: 25px;
@@ -213,6 +267,9 @@
 .conct {
   display: flex;
   justify-content: center;
+}
+.cont-2 {
+  margin-top: -5px;
 }
 .contact {
   font-size: 60px;

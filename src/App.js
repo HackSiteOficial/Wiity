@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import firebaseConf from './Firebase';
 import img1 from './assets/icon1.png';
-import img2 from './assets/icon3.png';
-import img3 from './assets/icon2.png';
+import img2 from './assets/icon2.png';
+import img3 from './assets/icon3.png';
 import lamp1 from './assets/lamp1.png';
 import lamp2 from './assets/lamp2.png';
 import lamp3 from './assets/lamp3.png';
@@ -67,27 +67,23 @@ class App extends Component {
   }
   render() {
     return (
-      <div style={{backgroundColor: '#ffb218'}}>
+      <div class="back-o">
         {/*wiity*/}
         <div className="slide">
-          <div class="perro">
-
-          </div>
+          <div class="perro"></div>
         </div>
         {/*nosotros*/}
         <div class="about-c">
           <div class="card">
             <h1 class="about-t">Nosotros</h1>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div class="about-con">
             <p class="about-p">Somos una empresa dedicada a desarrollar el potencial humano en las organizaciones, por medio de cursos, talleres, conferencias y asesorías multidisciplinarias.</p>
             </div>
           </div>
         </div>
-
         <div class="about-c">
           <h1 class="why">¿Por qué ser parte de Wiity?</h1>
         </div>
-
         <div class="thre">
           <div class="img">
             <img src={img1} alt=""/>
@@ -120,154 +116,138 @@ class App extends Component {
             </div>
           </div>
         </div>
-
-        <div style={{backgroundColor: '#ffb218', height: '50px'}}>
+        <div class="back-o2">
         </div>
-
-        <div style={{backgroundColor: '#162941', display: 'flex', justifyContent: 'center'}}>
-          <div style={{width: '100%', display: 'flex'}}>
-
+        <div class="back-o3">
+          <div class="lamp-c">
             <div class="lamp">
-              <div style={{display: 'flex', justifyContent: 'center'}}>
+              <div class="imgs-cont">
                 <img src={lamp1} alt=""/>
                 <img src={lamp2} alt="" class="img-top"/>
               </div>
-
-
               <div class="prueba">
-                <div style={{textAlign: 'left', width: '95%'}}>
-                  <div style={{width: '100%'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>DE LA COOPERACIÓN A LA COLABORACIÓN EN EQUIPOS DE TRABAJO</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo transformar el trabajo cooperativo al colaborativo?</p>
+                <div class="prueba-sep">
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">DE LA COOPERACIÓN A LA COLABORACIÓN EN EQUIPOS DE TRABAJO</p>
+                    <p class="sep-t2c2">¿Cómo transformar el trabajo cooperativo al colaborativo?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>EL CONTAMINANTE SILENCIOSO DE LAS ORGANIZACIONES</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo combatir al síndrome de “Burn out” en las organizaciones?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">EL CONTAMINANTE SILENCIOSO DE LAS ORGANIZACIONES</p>
+                    <p class="sep-t2c2">¿Cómo combatir al síndrome de “Burn out” en las organizaciones?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>LA TECNOLOGÍA COMO UN MEDIO Y NO COMO UN FIN PARA EL APRENDIZAJE</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo innovar mi labor de enseñanza por medio de nuevas herramientas tecnológicas?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">LA TECNOLOGÍA COMO UN MEDIO Y NO COMO UN FIN PARA EL APRENDIZAJE</p>
+                    <p class="sep-t2c2">¿Cómo innovar mi labor de enseñanza por medio de nuevas herramientas tecnológicas?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>ESTRATEGIAS DE ENDOMÁRKETING EN LAS ORGANIZACIONES</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo mantener a mis colaboradores enterados sobre lo que sucede en la organización y fortalecer la identidad organizacional?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">ESTRATEGIAS DE ENDOMÁRKETING EN LAS ORGANIZACIONES</p>
+                    <p class="sep-t2c2">¿Cómo mantener a mis colaboradores enterados sobre lo que sucede en la organización y fortalecer la identidad organizacional?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>CONOCER EC0217 Y EC0301 PARA LA INSTRUCCIÓN Y DISEÑO DE CURSOS DE FORMACIÓN Y CAPACITACIÓN</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo diseñar e impartir cursos de formación y capacitación de manera profesional para el logro de objetivos y metas organizacionales?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">CONOCER EC0217 Y EC0301 PARA LA INSTRUCCIÓN Y DISEÑO DE CURSOS DE FORMACIÓN Y CAPACITACIÓN</p>
+                    <p class="sep-t2c2">¿Cómo diseñar e impartir cursos de formación y capacitación de manera profesional para el logro de objetivos y metas organizacionales?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>DEL AUTOCONOCIMIENTO A LA GESTIÓN EFICIENTE DE LAS EMOCIONES. LA ALFABETIZACIÓN EMOCIONAL</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo ser emocionalmente más inteligente?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">DEL AUTOCONOCIMIENTO A LA GESTIÓN EFICIENTE DE LAS EMOCIONES. LA ALFABETIZACIÓN EMOCIONAL</p>
+                    <p class="sep-t2c2">¿Cómo ser emocionalmente más inteligente?</p>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="lamp">
-              <div style={{display: 'flex', justifyContent: 'center'}}>
+              <div class="imgs-cont">
                 <img src={lamp3} alt=""/>
                 <img src={lamp4} alt="" class="img-top"/>
               </div>
               <div class="prueba2">
-                <div style={{textAlign: 'left', width: '95%'}}>
-                  <div style={{width: '100%'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>DE UNA IDEA AL EMPRENDIMIENTO</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Tienes una idea de negocio y no sabes por dónde comenzar?</p>
+                <div class="prueba-sep">
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">DE UNA IDEA AL EMPRENDIMIENTO</p>
+                    <p class="sep-t2c2">¿Tienes una idea de negocio y no sabes por dónde comenzar?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>GESTIÓN INTELIGENTE DE LAS EMOCIONES EN LA EMPRESA</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo gestionar inteligentemente las emociones en mi empresa?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">GESTIÓN INTELIGENTE DE LAS EMOCIONES EN LA EMPRESA</p>
+                    <p class="sep-t2c2">¿Cómo gestionar inteligentemente las emociones en mi empresa?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>APRENDE A DISEÑAR, IMPLEMENTAR E INTERPRETAR INSTRUMENTOS DE EVALUACIÓN</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo eficientar mis procesos de evaluación?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">APRENDE A DISEÑAR, IMPLEMENTAR E INTERPRETAR INSTRUMENTOS DE EVALUACIÓN</p>
+                    <p class="sep-t2c2">¿Cómo eficientar mis procesos de evaluación?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>APRENDE A LEER A LAS PERSONAS Y LOGRA RELACIONES EXITOSAS</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Qué es el lenguaje corporal? Y ¿Cómo utilizarlo para aprender a leer a las personas y lograr relaciones exitosas?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">APRENDE A LEER A LAS PERSONAS Y LOGRA RELACIONES EXITOSAS</p>
+                    <p class="sep-t2c2">¿Qué es el lenguaje corporal? Y ¿Cómo utilizarlo para aprender a leer a las personas y lograr relaciones exitosas?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>ERRORES EN EL PROCESO DE COMUNICACIÓN Y SU ANTÍDOTO</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿No te entienden? O ¿No te das a entender?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">ERRORES EN EL PROCESO DE COMUNICACIÓN Y SU ANTÍDOTO</p>
+                    <p class="sep-t2c2">¿No te entienden? O ¿No te das a entender?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>COACHING VOCACIONAL</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Quién soy?, ¿En dónde estoy? y exactamente… ¿A dónde voy?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">COACHING VOCACIONAL</p>
+                    <p class="sep-t2c2">¿Quién soy?, ¿En dónde estoy? y exactamente… ¿A dónde voy?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>LA INFLUENCIA DE LAS CREENCIAS LIMITANTES EN TU VIDA</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>Lo que estás creyendo… ¿Te destruye o te transforma?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">LA INFLUENCIA DE LAS CREENCIAS LIMITANTES EN TU VIDA</p>
+                    <p class="sep-t2c2">Lo que estás creyendo… ¿Te destruye o te transforma?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '-10px'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>LAS DIFERENCIAS DE GÉNERO PARA EL CUMPLIMIENTO DE METAS</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Por qué tú y yo no?</p>
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">LAS DIFERENCIAS DE GÉNERO PARA EL CUMPLIMIENTO DE METAS</p>
+                    <p class="sep-t2c2">¿Por qué tú y yo no?</p>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="lamp">
-              <div style={{display: 'flex', justifyContent: 'center'}}>
+              <div class="imgs-cont">
                 <img src={lamp5} alt=""/>
                 <img src={lamp6} alt="" class="img-top"/>
               </div>
-
               <div class="prueba3">
-                <div style={{textAlign: 'left', width: '95%', margin: '5px'}}>
-                  <div style={{width: '100%'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>"CONFERENCIA:  EL PAPEL DEL MIEDO EN MI VIDA"</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo gestionar el miedo para escapar de mi zona de confort?</p>
+                <div class="prueba-sep">
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">"CONFERENCIA:  EL PAPEL DEL MIEDO EN MI VIDA"</p>
+                    <p class="sep-t2c2">¿Cómo gestionar el miedo para escapar de mi zona de confort?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '60px', borderTop: '3px solid #ff8500'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>"CONFERENCIA: LENGUAJE CORPORAL"</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Cómo reconocer y gestionar nuestras emociones y estado de ánimo con ayuda del lenguaje corporal?</p>
+                  <div class="prueba-w3">
+                    <p class="sep-t2c">"CONFERENCIA: LENGUAJE CORPORAL"</p>
+                    <p class="sep-t2c2">¿Cómo reconocer y gestionar nuestras emociones y estado de ánimo con ayuda del lenguaje corporal?</p>
                   </div>
-                  <div style={{width: '100%', marginTop: '60px', borderTop: '3px solid #ff8500'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>"CONFERENCIA: COACHING VOCACIONAL"</p>
-                    <p class="sep-t2c2" style={{marginLeft: '20px', fontWeight: '600', marginRight: '20px', color: '#FFF'}}>¿Quién soy?, ¿En dónde estoy? y exactamente… ¿A dónde voy? </p>
+                  <div class="prueba-w3">
+                    <p class="sep-t2c">"CONFERENCIA: COACHING VOCACIONAL"</p>
+                    <p class="sep-t2c2">¿Quién soy?, ¿En dónde estoy? y exactamente… ¿A dónde voy? </p>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="lamp">
-              <div style={{display: 'flex', justifyContent: 'center'}}>
+              <div class="imgs-cont">
                 <img src={lamp7} alt=""/>
                 <img src={lamp8} alt="" class="img-top"/>
               </div>
-
               <div class="prueba4">
-                <div style={{textAlign: 'left', width: '90%', margin: '10px'}}>
-                  <div style={{width: '100%'}}>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>EN “DISEÑO DE PROGRAMAS DE CAPACITACIÓN O PROFESIONALIZACIÓN DEL CAPITAL HUMANO”</p>
-                    <p class="sep-t2c3" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#FFF'}}>EN “IMPARTICIÓN DE CURSOS DE CAPACITACIÓN O PROFESIONALIZACIÓN DEL CAPITAL HUMANO DE MANERA PRESENCIAL GRUPAL”</p>
-                    <p class="sep-t2c" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#ff8500'}}>EN “DISEÑO DE DEMO PARA IMAGEN EMPRESARIAL Y PROYECTOS PERSONALES”</p>
-                    <p class="sep-t2c3" style={{marginLeft: '20px', fontWeight: '800', marginRight: '20px', color: '#FFF'}}>EN “PERSONALIZACIÓN DE CURRÍCULUM VITAE CREATIVO E INNOVADOR”</p>
+                <div class="text-4">
+                  <div class="prueba-w2">
+                    <p class="sep-t2c">EN “DISEÑO DE PROGRAMAS DE CAPACITACIÓN O PROFESIONALIZACIÓN DEL CAPITAL HUMANO”</p>
+                    <p class="sep-t2c3">EN “IMPARTICIÓN DE CURSOS DE CAPACITACIÓN O PROFESIONALIZACIÓN DEL CAPITAL HUMANO DE MANERA PRESENCIAL GRUPAL”</p>
+                    <p class="sep-t2c">EN “DISEÑO DE DEMO PARA IMAGEN EMPRESARIAL Y PROYECTOS PERSONALES”</p>
+                    <p class="sep-t2c3">EN “PERSONALIZACIÓN DE CURRÍCULUM VITAE CREATIVO E INNOVADOR”</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div style={{backgroundColor: '#162941', height: '450px'}}>
-        </div>
-
+        <div class="back-3"></div>
         <img src={img4} alt="" class="imgt"/>
-
-
-
         {this.state.alert && <div className={`alert alert-${this.state.alertData.type}`} role='alert'>
-          <div className='container'>
+          <div class="container">
             {this.state.alertData.message}
           </div>
         </div>}
-        <div className='container' style={{padding: '40px 0px'}}>
+        <div class="container" style={{padding: '40px 0px'}}>
           <div>
             <h1 class="contact">Contáctanos</h1>
             <form class="conct" onSubmit={this.sendMessage.bind(this)} ref='contactForm'>
-              <div style={{marginTop: '-5px'}}>
+              <div class="cont-2">
                 <input class="form-c" type='text' id='name' placeholder='Name' ref={name => this.inputName = name} />
                 <input class="form-c2" type='email' id='email' placeholder='Email' ref={email => this.inputEmail = email} />
               </div>
@@ -283,7 +263,6 @@ class App extends Component {
             </div>
         </div>
       </div>
-
       </div>
     );
   }
