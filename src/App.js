@@ -13,6 +13,10 @@ import lamp6 from './assets/lamp6.png';
 import lamp8 from './assets/lamp7.png';
 import lamp7 from './assets/lamp8.png';
 import img4 from './assets/img4.png';
+import imgE from './assets/elige.png';
+import imgC from './assets/cap.png';
+import imgN from './assets/nos.png';
+import imgP from './assets/pro.png';
 import {SocialIcon} from 'react-social-icons';
 
 class App extends Component {
@@ -84,37 +88,31 @@ class App extends Component {
         <div class="about-c">
           <h1 class="why">¿Por qué ser parte de Wiity?</h1>
         </div>
+
+        <div class="thre-cont">
         <div class="thre">
           <div class="img">
             <img src={img1} alt=""/>
-          </div>
-          <div class="img">
-            <img src={img3} alt=""/>
-          </div>
-          <div class="img">
-            <img src={img2} alt=""/>
-          </div>
-        </div>
-
-        <div class="thre">
-          <div class="pt">
             <p class="pt">Aprende</p>
             <div class="ptt-container">
               <p class="ptt">Ya sea aplicando en alguno de los cursos que tenemos para ti, o aprender a diseñar cursos de capacitación y formación de manera preofesional.</p>
             </div>
           </div>
-          <div class="pt">
+          <div class="img">
+            <img src={img3} alt=""/>
             <p class="pt">Conoce</p>
             <div class="ptt-container">
               <p class="ptt">Inscribiendote a los cursos, podras conocer y conectarte con otros estudiantes e instructores que ya forman parte de la comunidad.</p>
             </div>
           </div>
-          <div class="pt">
+          <div class="img">
+            <img src={img2} alt=""/>
             <p class="pt">Destaca</p>
             <div class="ptt-container">
               <p class="ptt">Ademas de tu aprendezaje, obtendras reconocimiento con las constancias de valor curricular para que compartas con tus futuros empleadores.</p>
             </div>
           </div>
+        </div>
         </div>
         <div class="back-o2">
         </div>
@@ -238,6 +236,10 @@ class App extends Component {
         </div>
         <div class="back-3"></div>
         <img src={img4} alt="" class="imgt"/>
+        <img src={imgE} alt="" class="elige"/>
+        <img src={imgC} alt="" class="elige"/>
+        <img src={imgN} alt="" class="elige"/>
+        <img src={imgP} alt="" class="elige"/>
         {this.state.alert && <div className={`alert alert-${this.state.alertData.type}`} role='alert'>
           <div class="container">
             {this.state.alertData.message}
